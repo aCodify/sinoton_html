@@ -1,0 +1,7 @@
+#DirectoryIndex intro.php
+
+<FilesMatch "\.(ttf|otf|woff)$">
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+</FilesMatch> 

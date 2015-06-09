@@ -1,0 +1,135 @@
+// USEFULS
+// --------------------------------------------------
+
+.indent-hidding  { text-indent: -9999px }
+.indent10        { text-indent: 10px }
+.indent15        { text-indent: 15px }
+.indent20        { text-indent: 20px }
+.indent25        { text-indent: 25px }
+
+.none, .hidden   { display: none }
+.overflow-hidden { overflow: hidden; }
+
+.block           { display: block }
+.inline-block    { display: inline-block }
+
+.pointer         { cursor: pointer }
+.relative        { position: relative }
+.absolute        { position: absolute }
+
+.pull-left       { float: left }
+.pull-right      { float: right }
+
+.text-center     { text-align: center }
+.text-left       { text-align: left }
+.text-right      { text-align: right }
+.text-just       { text-align: justify }
+
+.margin-auto     { margin: 0 auto }
+.margin0         { margin: 0 }
+.padding0        { padding: 0 }
+
+.border-none     { border: 0 }
+.outline-none    { outline: 0 }
+.background-none { background: 0 }
+.underline-none  { text-decoration: none }
+
+.ul-unstyle {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.opacity(@opacity) {
+    opacity: @opacity;
+    // IE8 filter
+    @opacity-ie: (@opacity * 100);
+    filter: ~"alpha(opacity=@{opacity-ie})";
+}
+.opa09 {
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+.opa08 {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.opa07 {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+.opa06 {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.placeholder(@color: @input-color-placeholder) {
+    &:-moz-placeholder            { color: @color; } // Firefox 4-18
+    &::-moz-placeholder           { color: @color; } // Firefox 19+
+    &:-ms-input-placeholder       { color: @color; } // Internet Explorer 10+
+    &::-webkit-input-placeholder  { color: @color; } // Safari and Chrome
+}
+
+// Utilities
+// -------------------------
+
+.clearfix() {
+    &:before,
+    &:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// Text overflow
+// Requires inline-block or block for proper styling
+.text-overflow() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+// CSS3 PROPERTIES
+// --------------------------------------------------
+
+// Drop shadows
+.box-shadow(@shadow) {
+    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+    box-shadow: @shadow;
+}
+
+// Transitions
+.transition(@transition) {
+    -webkit-transition: @transition;
+    transition: @transition;
+}
+.transition-delay(@transition-delay) {
+    -webkit-transition-delay: @transition-delay;
+    transition-delay: @transition-delay;
+}
+.transition-duration(@transition-duration) {
+    -webkit-transition-duration: @transition-duration;
+    transition-duration: @transition-duration;
+}
+.transition-transform(@transition) {
+    -webkit-transition: -webkit-transform @transition;
+    -moz-transition: -moz-transform @transition;
+    -o-transition: -o-transform @transition;
+    transition: transform @transition;
+}
+
+// Box sizing
+.box-sizing(@boxmodel) {
+    -webkit-box-sizing: @boxmodel;
+    -moz-box-sizing: @boxmodel;
+    box-sizing: @boxmodel;
+}

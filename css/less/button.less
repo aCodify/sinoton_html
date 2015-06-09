@@ -1,0 +1,99 @@
+// Button and Icon
+// ------------------------
+
+*[class^="btn-"],
+*[class^="ico-"] {
+	.relative;
+	.inline-block;
+	.border-none;
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+*[class^="ico-"] {
+	.indent-hidding;
+}
+
+*[class^="btn-"] {
+	.pointer;
+	.underline-none;
+	padding: 0 10px;
+}
+
+
+// Button
+// ------------------------
+
+button,
+.btn-orange {
+	border: 0;
+	padding:0 15px;
+	color: #fff !important;
+	height: 27px;
+	line-height: 27px;
+	border-radius: 3px;
+	background: #aaaaaa; /* Old browsers */
+	background: -moz-linear-gradient(top,  #aaaaaa 0%, #898989 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aaaaaa), color-stop(99%,#898989)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #aaaaaa 0%,#898989 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #aaaaaa 0%,#898989 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #aaaaaa 0%,#898989 99%); /* IE10+ */
+	background: linear-gradient(to bottom,  #aaaaaa 0%,#898989 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aaaaaa', endColorstr='#898989',GradientType=0 ); /* IE6-9 */
+
+	&:hover,
+	&.active {
+		background: #ff6600; /* Old browsers */
+		background: -moz-linear-gradient(top,  #ff6600 0%, #f7941d 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff6600), color-stop(100%,#f7941d)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #ff6600 0%,#f7941d 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #ff6600 0%,#f7941d 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #ff6600 0%,#f7941d 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #ff6600 0%,#f7941d 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6600', endColorstr='#f7941d',GradientType=0 ); /* IE6-9 */
+
+	}
+}
+
+
+
+// Icon
+// ------------------------
+
+.ico-th {
+	background-image: url(../img/icon/language.png);
+	background-position: 0 0;
+	width: 29px; height: 29px;
+}
+.ico-en {
+	background-image: url(../img/icon/language.png);
+	background-position: -29px 0;
+	width: 29px; height: 29px;
+}
+.ico-ch {
+	background-image: url(../img/icon/language.png);
+	background-position: -58px 1px;
+	width: 29px; height: 29px;
+}
+.ico-phone {
+	background-image: url(../img/icon/phone.png);
+	width: 15px; height: 21px;
+}
+.ico-pdf {
+	background-image: url(../img/icon/pdf.png);
+	width: 18px; height: 17px;
+	top: 3px;
+}
+.ico-email {
+	background-image: url(../img/icon/email.png);
+	width: 22px; height: 15px;
+}
+.ico-bullet {
+	background-image: url(../img/icon/bullet-orange.jpg);
+	width: 3px; height: 3px;
+}
+.ico-more {
+	background-image: url(../img/icon/more.png);
+	width: 8px; height: 8px;
+}
