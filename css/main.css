@@ -1025,6 +1025,12 @@ x:default {
 .gteie8 #page-wrapper.home .main-content .row-intro .col-orange h1 {
   font-size: 13px;
 }
+
+
+
+/*===============================================
+=            Edit Header New Version            =
+===============================================*/
 #main-header .container .row-2 {
   background: url(../img/bg-head.jpg) center top no-repeat;
   background-size: auto 100%;
@@ -1034,6 +1040,11 @@ x:default {
 #main-header .container .row-2 .logo.full {
   width: 945px;
 }
+
+
+/*=========================================
+=            Start New Version            =
+=========================================*/
 .sidebar.health {
   position: relative;
   width: 206px;
